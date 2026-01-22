@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     char X;
     cin >> X;
-    
+   
     // Using ASCII values
     if (X >= 97 && X <= 122) {      // Lowercase: 97-122
         // Convert to uppercase (subtract 32)
