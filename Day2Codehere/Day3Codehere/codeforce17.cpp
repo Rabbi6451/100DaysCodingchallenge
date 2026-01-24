@@ -1,10 +1,16 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main(){
-    int a=5;
-    int b=7;
-
-    long long product = (a % 100) * (b % 100) % 100;
-    cout<<product;
+    long double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    
+    if(b * log(a) > d * log(c)){
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+    
+    return 0;
 }
