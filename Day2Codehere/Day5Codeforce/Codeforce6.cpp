@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 int main(){
@@ -6,11 +7,10 @@ int main(){
     cin>>a;
 
     vector<int> t(a);
-    for(int i=0;i<a;i++){
+    for(long i=0;i<a;i++){
         cin>>t[i];
     }
-    for(int i=0;i<a;i++){
-        
-        cout<<i;
-    }
+    sort(t.begin(),t.end());
+        cout<<t[a-1];
+    
 }
