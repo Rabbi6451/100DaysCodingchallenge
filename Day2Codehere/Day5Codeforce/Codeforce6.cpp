@@ -10,7 +10,7 @@ int main(){
         cin>>t[i];
     }
     for(int i=0;i<a;i++){
-        int value = max(i);
+        
         cout<<i;
     }
 }
