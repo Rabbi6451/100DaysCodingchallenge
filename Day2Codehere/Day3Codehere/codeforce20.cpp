@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int a,b;
+    long double a,b;
     cin>>a>>b;
 
     int c = a*log(b);
