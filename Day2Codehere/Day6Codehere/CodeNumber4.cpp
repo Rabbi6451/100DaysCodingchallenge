@@ -2,7 +2,16 @@
 using namespace std;
 
 int main(){
-    int a; 
+    string a;
     cin>>a;
-    cout<<a;
+
+    reverse(a.begin(),a.end());
+
+    if(a==a){
+        cout<<a<<endl;
+        cout<<"YES";
+    }else{
+        cout<<a<<endl;
+        cout<<"NO";
+    }
 }
