@@ -1,13 +1,29 @@
-#include<iostream>
+#include <iostream>
+#include <cmath>
 using namespace std;
 
-int main(){
-    int a;
-    cin>>a;
+int main() {
+    int n;
+    bool isPrime = true;
 
-    if(a%2 != 0 && a%3 != 0 && a%7 != 0 ){
-        cout<<"NO";
-    }else{
-        cout<<"YES";
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n <= 1) {
+        isPrime = false;
+    } else {
+        for (int i = 2; i <= sqrt(n); i++) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
     }
-}
+
+    if (isPrime)
+        cout << n << " is a prime number.";
+    else
+        cout << n << " is not a prime number.";
+
+    return 0;
+}   
