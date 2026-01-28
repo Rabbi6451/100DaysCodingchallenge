@@ -6,9 +6,7 @@ int main() {
     int n;
     bool isPrime = true;
 
-    
     cin >> n;
-
     if (n <= 1) {
         isPrime = false;
     } else {
@@ -19,11 +17,8 @@ int main() {
             }
         }
     }
-
     if (isPrime)
         cout << "YES";
     else
         cout << "NO";
-
-    return 0;
 }   

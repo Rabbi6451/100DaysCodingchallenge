@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/mdrabbi/Day1/Day2Codehere",
-      "program": "/Users/mdrabbi/Day1/Day2Codehere/build/Debug/outDebug"
+      "cwd": "/Users/mdrabbi/Day1/Day2Codehere/Day6Codehere",
+      "program": "/Users/mdrabbi/Day1/Day2Codehere/Day6Codehere/build/Debug/outDebug"
     }
   ]
 }
