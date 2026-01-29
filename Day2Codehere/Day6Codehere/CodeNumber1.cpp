@@ -5,7 +5,6 @@ int main(){
     int a;
     cin>>a;
 
-    for(int i = a;i>=1;i=i/2){
-        cout<<i<<endl;
-    }
+    int k = a*(a+1)/2;
+    cout<<k;
 }
