@@ -28,7 +28,7 @@ int main() {
     }
     
     if (freq % 2 == 1) {
-        cout << "Lucky c++ code" << endl;
+        cout << "Lucky" << endl;
     } else {
         cout << "Unlucky" << endl;
     }
