@@ -13,7 +13,6 @@ int main() {
         sum1 += arr1[i];
     }
     
-    // Second array of the first pair
     cin >> n2;
     vector<int> arr2(n2);
     int sum2 = 0;
@@ -24,10 +23,8 @@ int main() {
     
     int firstPairSum = sum1 + sum2;
     
-    // Second pair of arrays
     int m1, m2;
     
-    // First array of the second pair
     cin >> m1;
     vector<int> arr3(m1);
     int sum3 = 0;
@@ -36,7 +33,6 @@ int main() {
         sum3 += arr3[i];
     }
     
-    // Second array of the second pair
     cin >> m2;
     vector<int> arr4(m2);
     int sum4 = 0;
@@ -47,7 +43,6 @@ int main() {
     
     int secondPairSum = sum3 + sum4;
     
-    // Compare the sums
     if(firstPairSum == secondPairSum) {
         cout << "Yes" << endl;
     } else {
