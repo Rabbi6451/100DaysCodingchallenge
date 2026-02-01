@@ -20,7 +20,6 @@ int main() {
         }
         ans = min(ans, cnt);
     }
-    
     cout << ans << endl;
 
 }
