@@ -28,7 +28,6 @@ int main() {
             continue;
         }
         
-        // Check if reverse of arr1 equals arr2
         bool isMatch = true;
         for(int i = 0; i < size1; i++) {
             if(arr1[i] != arr2[size1 - 1 - i]) {
