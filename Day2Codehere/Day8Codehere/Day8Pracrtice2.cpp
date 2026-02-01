@@ -3,10 +3,8 @@
 using namespace std;
 
 int main() {
-    // First pair of arrays
     int n1, n2;
     
-    // First array of the first pair
     cin >> n1;
     vector<int> arr1(n1);
     int sum1 = 0;
