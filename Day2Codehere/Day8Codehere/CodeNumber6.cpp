@@ -27,3 +27,15 @@ int main(){
     
     return 0;
 }
+/*
+Input :
+5 3
+1 5 4 3 2
+5
+3
+6
+Output : 
+found
+found
+not found
+*/
