@@ -1,5 +1,5 @@
 #include<iostream>
-#include<iostream>
+#include<vector>
 #include<algorithm>
 using namespace std;
 
@@ -8,7 +8,6 @@ int main(){
     cin>>a>>b;
 
     while(a--){
-        
         vector<long long> t(b);
         for(int i=0;i<b;i++){
             cin>>t[i];
@@ -20,4 +19,5 @@ int main(){
         }
         cout<<endl;
     }
+    return 0;
 }
