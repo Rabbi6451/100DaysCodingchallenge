@@ -1,25 +1,31 @@
 #include<iostream>
+#include<unordered_set>
 using namespace std;
 
 int main(){
-    int a,b;
-    cin>>a>>b;
-
-    vector<int> t(a);
-
-    for(int i=0;i<a;i++){
-        cin>>t[i];
+    int n, q;
+    cin >> n >> q;
+    
+    unordered_set<int> s;
+    
+    // Read array and store in set
+    for(int i = 0; i < n; i++){
+        int num;
+        cin >> num;
+        s.insert(num);
     }
-
-    for(int i=0;i<b;i++){
-        cin>>i;
-        cout<<endl;
-    }
-    for(int i=0;i<b;i++){
-        if(i == t[i]){
-            cout<<"Found"<<endl;
-        }else{
-            cout<<"Not Found"<<endl;
+    
+    // Process queries
+    for(int i = 0; i < q; i++){
+        int x;
+        cin >> x;
+        
+        if(s.find(x) != s.end()){
+            cout << "found" << endl;
+        } else {
+            cout << "not found" << endl;
         }
     }
+    
+    return 0;
 }
