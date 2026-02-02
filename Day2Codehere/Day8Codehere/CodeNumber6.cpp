@@ -8,14 +8,12 @@ int main(){
     
     unordered_set<int> s;
     
-    // Read array and store in set
     for(int i = 0; i < n; i++){
         int num;
         cin >> num;
         s.insert(num);
     }
     
-    // Process queries
     for(int i = 0; i < q; i++){
         int x;
         cin >> x;
