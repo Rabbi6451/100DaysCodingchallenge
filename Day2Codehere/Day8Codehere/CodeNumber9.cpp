@@ -21,13 +21,13 @@ int main() {
             if (A[i] >= A[i-1]) {
                 len++;
             } else {
-                // All subarrays inside previous segment are good
+               
                 ans += (len * 1LL * (len + 1)) / 2;
                 len = 1;
             }
         }
         
-        // Don't forget the last segment
+      
         ans += (len * 1LL * (len + 1)) / 2;
         
         cout << ans << endl;
