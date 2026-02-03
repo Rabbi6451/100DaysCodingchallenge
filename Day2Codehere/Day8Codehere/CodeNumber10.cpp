@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    
+    vector<int> A(N);
+    for(int i = 0; i < N; i++) {
+        cin >> A[i];
+    }
+    
+    vector<int> B(N);
+    for(int i = 0; i < N; i++) {
+        cin >> B[i];
+    }
+    
+    sort(A.begin(), A.end());
+    sort(B.begin(), B.end());
+    
+    if(A == B) {
+        cout << "yes" << endl;
+    } else {
+        cout << "no" << endl;
+    }
+    
+    return 0;
+}

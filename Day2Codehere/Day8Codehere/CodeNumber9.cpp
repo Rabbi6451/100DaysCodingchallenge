@@ -36,3 +36,14 @@ int main() {
     
     return 0;
 }
+/*
+input : 
+2
+5
+1 4 2 3 5
+1
+5
+Output :
+9
+1
+*/
