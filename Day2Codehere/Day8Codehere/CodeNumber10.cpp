@@ -26,3 +26,17 @@ int main() {
     
     return 0;
 }
+/*
+Input :
+4
+4 2 3 7
+2 3 4 9
+output :
+No
+Input :
+5
+5 1 1 9 3
+1 9 1 5 3
+Output :
+Yes
+*/
