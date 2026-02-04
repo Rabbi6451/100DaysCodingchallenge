@@ -9,4 +9,8 @@ int main(){
     for(int i=0;i<a;i++){
         cin>>t[i];
     }
+    sort(t.begin(), t.end());
+    for(int i=0;i<a;i++){
+        cout<<t[i];
+    }
 }
