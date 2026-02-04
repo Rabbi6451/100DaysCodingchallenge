@@ -32,4 +32,18 @@ int main() {
 
 /*
 Input : 
+2 2
+1 2
+3 4
+3
+output : 
+will not take number 
+Input :
+2 2
+1 2
+3 4
+10
+output :
+will take number
+
 */
