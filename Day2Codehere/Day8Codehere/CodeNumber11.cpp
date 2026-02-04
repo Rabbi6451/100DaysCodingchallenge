@@ -9,24 +9,19 @@ int main() {
     string S;
     cin >> S;
     
-    // Check all conditions
     bool valid = true;
     
-    // Check length
     if (S.length() != A + B + 1) {
         valid = false;
     }
     
-    // Check hyphen position
     if (S[A] != '-') {
         valid = false;
     }
     
-    // Check all characters are valid
     for (int i = 0; i < S.length() && valid; i++) {
         if (i == A) continue;
         
-        // Check if character is a digit
         if (S[i] < '0' || S[i] > '9') {
             valid = false;
         }
@@ -36,3 +31,21 @@ int main() {
     
     return 0;
 }
+
+/*
+Input :
+3 3
+269-665
+Output :
+Yes
+Input : 
+1 1
+12-
+output :
+No
+Input :
+1 2
+7444
+output :
+no
+*/
