@@ -26,10 +26,21 @@ int main() {
     int difference = primaryDiagonal - secondaryDiagonal;
     if (difference < 0) {
         difference = -difference;  
-        
+
     }
     
     cout << difference << endl;
     
     return 0;
 }
+/*
+Input :
+4
+1 5 12 1
+2 -4 6 7
+3 8 5 9
+3 5 23 -6
+Output :
+22 
+Summation.
+*/
