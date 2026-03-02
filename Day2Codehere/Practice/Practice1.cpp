@@ -16,6 +16,6 @@ int main() {
         i++;
     }
     
-    cout << (j == m ? "Yes" : "No") << endl;
+    cout << (j == m ? "YES" : "NO") << endl;
     return 0;
 }
