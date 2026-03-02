@@ -10,20 +10,20 @@ int main() {
     while (T--) {
         int N;
         cin >> N;
-        vector<int> arr(N);
+        vector<int> t(N);
         
         for (int i = 0; i < N; i++) {
-            cin >> arr[i];
+            cin >> t[i];
         }
         
         vector<int> results;
         
         for (int start = 0; start < N; start++) {
             for (int end = start; end < N; end++) {
-                int max_val = arr[start];
+                int max_val = t[start];
                 for (int k = start; k <= end; k++) {
-                    if (arr[k] > max_val) {
-                        max_val = arr[k];
+                    if (t[k] > max_val) {
+                        max_val = t[k];
                     }
                 }
                 results.push_back(max_val);
