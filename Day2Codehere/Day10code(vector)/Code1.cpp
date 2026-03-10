@@ -25,6 +25,7 @@ int main() {
                 countMax++;
             }
         }
+        
         bool allEqual = true;
         for (int i = 1; i < n; i++) {
             if (a[i] != a[0]) {
