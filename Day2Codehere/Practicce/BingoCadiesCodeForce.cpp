@@ -1,35 +1,25 @@
-#include <iostream>
+#include<iostream>
 #include<map>
-using namespace std;
 
-int main() {
+using namespace std;
+int main(){
     int t;
-    cin >> t;
-    
-    while (t--) {
+    cin>>t;
+    while(t--){
         int n;
-        cin >> n;
-        
-        map<int, int> freq;
-        int maxFreq = 0;
-        
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                int color;
-                cin >> color;
-                freq[color]++;
-                maxFreq = max(maxFreq, freq[color]);
+        cin>>n;
+        map<int,int> cnt;
+        for(int i=0;i<n*n;i++){
+            int x; cin>>x;
+            cnt[x]++;
+        }
+        bool ok=true;
+        for(auto&p:cnt){
+            if(p.second>n*(n-1)){
+                ok=false;
+                break;
             }
         }
-        
-        int limit = (n * n + 1) / 2;  // ceil(n²/2)
-        
-        if (maxFreq > limit) {
-            cout << "NO\n";
-        } else {
-            cout << "YES\n";
-        }
+        cout<<(ok?"YES":"NO")<<"\n";
     }
-    
-    return 0;
 }
