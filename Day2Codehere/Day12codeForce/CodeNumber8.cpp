@@ -6,7 +6,7 @@ int main() {
     cin >> n;
 
     while (n--) {
-        int num;
+        long long num;
         cin >> num;
 
         if (num == 0) {
